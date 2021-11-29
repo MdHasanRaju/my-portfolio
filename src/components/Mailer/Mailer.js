@@ -9,6 +9,9 @@ const Mailer = () => {
         emailjs.sendForm('service_kiqwmpa', 'template_lwo935u', e.target, 'user_rQcSrqu2UAQtEHCLMDNzr')
         .then(res => {
             console.log(res);
+            if (res) {
+                alert('Thanks For your Message')
+            }
         }).catch(err => console.log(err));
     }
 
