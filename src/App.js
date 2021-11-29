@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Navigation from './Navigation.js';
 import Home from './components/Home/Home/Home.js';
+import Mailer from './components/Mailer/Mailer';
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
       <Router>
         <Navigation></Navigation>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route path="/contact">
+            <Mailer></Mailer>
           </Route>
         </Switch>
 

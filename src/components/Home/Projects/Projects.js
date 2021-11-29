@@ -8,10 +8,10 @@ import a12 from '../../../images/assignment12.png'
 const Projects = () => {
     return (
         <div className="container mx-auto my-5">
-            <h1 className="text-center mb-3 title">Projects</h1>
+            <h1 className="text-center mb-4  title">Projects</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100" style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a12} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">THE ALL-NEW STYLISH AND MODERN</h5>
@@ -23,7 +23,7 @@ const Projects = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 " style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a11} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">EXPLORE-NEW-WORLDS-WITH-US</h5>
@@ -35,7 +35,7 @@ const Projects = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card h-100">
+    <div class="card h-100" style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a10} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">BEST-HOSPITALS-IN-BANGLADESH</h5>
