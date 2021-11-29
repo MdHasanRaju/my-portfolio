@@ -15,7 +15,7 @@ const Mailer = () => {
     return (
         <div className="container border" style={{marginTop:"50px", width:"50%", backgroundImage:`url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuw_C9TmXXBy-9q5UZdv3jxslpK9qn_bBmiA&usqp=CAU')`, backgroundPosition:"center", backgroundSize:"cover"}}>
             <h2 style={{marginTop:"30px", textAlign:"center"}}>Contact Form</h2>
-            <form className="row" style={{margin:"25px 85px 75px 100px"}} onSubmit={sendEmail}>
+            <form className="row" style={{margin:"0 auto"}} onSubmit={sendEmail}>
                 <label>name</label>
                 <input type="text" name="name" id="" className="form-control"/>
                 <label>Email</label>
