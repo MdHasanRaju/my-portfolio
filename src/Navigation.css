@@ -1,0 +1,15 @@
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.clr-code{
+    background-color: rgb(140, 236, 183);
+    border: 1px solid darkcyan;
+    color: black;
+}
+
+.clr-code:hover{
+    background-color: rgb(72, 206, 143);
+    border: 1px solid darkcyan;
+    color: black;
+}

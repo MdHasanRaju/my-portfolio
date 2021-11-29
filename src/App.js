@@ -11,7 +11,7 @@ import Home from './components/Home/Home/Home.js';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Navigation></Navigation>
         <Switch>
