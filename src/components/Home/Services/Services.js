@@ -4,7 +4,7 @@ import "./Services.css";
 function Services() {
   return (
     <div className="service component__space my-4"  id="Services">
-      <div className="heading mb-2">
+      <div className="heading mb-5">
         <h1 className="heading">My Awesome Service</h1>
         <p className="heading p__color">
           There are many variations of passages of Lorem Ipsum available,
@@ -196,7 +196,6 @@ function Services() {
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              cd{" "}
               <div className="service__meta">
                 <h1 className="service__text">Mobile App Development</h1>
                 <p className="p service__text p__color">

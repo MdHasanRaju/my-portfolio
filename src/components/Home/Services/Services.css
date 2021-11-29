@@ -19,13 +19,16 @@ h1.heading {
   }
   .service__box:hover {
     transform: translateY(5px);
-    background-image: linear-gradient(90deg, #f61b10, #ef0963);
+    background-image: linear-gradient(90deg, rgb(18, 175, 175), darkcyan);
+    cursor: pointer;
   }
   .service__box:hover .icon {
     color: #fff;
+    
   }
   .service__box:hover p.service__text.p__color {
     color: #fff !important;
+    
   }
   
   .icon {
@@ -33,7 +36,7 @@ h1.heading {
     font-weight: 400;
     margin-bottom: 23px;
     display: inline-flex;
-    color: #f9004d;
+    color:rgb(140, 236, 183)
   }
   p.service__text.p__color {
     margin-bottom: 0;
@@ -49,3 +52,10 @@ h1.heading {
       padding: 32px;
     }
   } */
+
+  .service__meta {
+    color: #fff;
+  }
+  .service__meta {
+    color: #fff;
+  }

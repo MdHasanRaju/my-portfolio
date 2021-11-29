@@ -15,8 +15,8 @@ const Projects = () => {
         <h5 class="card-title">THE ALL-NEW STYLISH AND MODERN</h5>
         <p class="card-text">This is a completely MERN stack project. It is also a Niche related website. Here, customer/user dashboard and admin dashboard are included.</p>
       </div>
-      <div class="card-footer">
-        <a target="_blank" className="text-decoration-none" href="https://assignment-12-76cbb.web.app/"><small class="text-muted">Visit Site</small></a>
+      <div class="card-footer clr-code" >
+        <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a>
       </div>
     </div>
   </div>
@@ -27,8 +27,8 @@ const Projects = () => {
         <h5 class="card-title">EXPLORE-NEW-WORLDS-WITH-US</h5>
         <p class="card-text">This is a tourism website. Here, An User can pre-book Any tour package.</p>
       </div>
-      <div class="card-footer">
-      <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-muted">Visit Site</small></a>
+      <div class="card-footer clr-code">
+      <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a>
       </div>
     </div>
   </div>
@@ -39,8 +39,8 @@ const Projects = () => {
         <h5 class="card-title">BEST-HOSPITALS-IN-BANGLADESH</h5>
         <p class="card-text">It is a Information based website. A stranger can find his targeted hospital's information through this website. Here, Some best Hospitals information and details are available..</p>
       </div>
-      <div class="card-footer">
-      <a target="_blank" className="text-decoration-none" href="https://best-hospitals-in-bangladesh.web.app/"><small class="text-muted">Visit Site</small></a>
+      <div class="card-footer clr-code">
+      <a target="_blank" className="text-decoration-none" href="https://best-hospitals-in-bangladesh.web.app/"><small class="text-dark">Visit Site</small></a>
       </div>
     </div>
   </div>
