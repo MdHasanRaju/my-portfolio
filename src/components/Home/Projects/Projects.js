@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 import { Card, Col, Row } from 'react-bootstrap';
 import a10 from '../../../images/assignment-10.png'
 import a11 from '../../../images/a11.png'
@@ -6,7 +7,8 @@ import a12 from '../../../images/assignment12.png'
 
 const Projects = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto my-5">
+            <h1 className="text-center mb-3 title">Projects</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
