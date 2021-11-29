@@ -17,11 +17,11 @@ const Mailer = () => {
             <h2 style={{marginTop:"30px", textAlign:"center"}}>Contact Form</h2>
             <form className="row" style={{margin:"0 auto"}} onSubmit={sendEmail}>
                 <label>name</label>
-                <input type="text" name="name" id="" className="form-control"/>
+                <input type="text" name="name" id="" className="form-control" required/>
                 <label>Email</label>
-                <input type="email" name="user_email" id="" className="form-control" />
+                <input type="email" name="user_email" id="" className="form-control" required/>
                 <label>Message</label>
-                <textarea name="message" rows="4"  className="form-control"></textarea>
+                <textarea name="message" rows="4"  className="form-control" required></textarea>
                 <input style={{marginTop:"30px"}} type="submit" value="Send"  className="form-control btn btn-primary"/>
             </form>
         </div>
