@@ -15,6 +15,7 @@ const Navigation = () => {
 
             <Nav.Link style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} href="/home/#about">About</Nav.Link>
 
+            <Link style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} to="/blogs">Blogs</Link>
               <Link style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} to="/contact">Contact Me</Link>
               <Nav.Link style={{margin:"auto 0" ,color:"lightgray"}} target="_blank" href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A" download>Resume</Nav.Link>
               <Nav.Link >

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import a10 from '../../../images/assignment-10.png'
 import a11 from '../../../images/a11.png'
 import a12 from '../../../images/assignment12.png'
+import { Link } from 'react-router-dom';
 
 
 const Projects = () => {
@@ -31,7 +32,8 @@ const Projects = () => {
         <p class="card-text">This is a completely MERN stack project. It is also a Niche related website. Here, customer/user dashboard and admin dashboard are included.</p>
       </div>
       <div class="card-footer clr-code" >
-        <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a>
+        <Link to="/detailsOne"><small class="text-dark">See More</small></Link>
+        {/* <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a> */}
       </div>
     </div>
   </div>
@@ -43,7 +45,8 @@ const Projects = () => {
         <p class="card-text">This is a tourism website. Here, An User can pre-book Any tour package.</p>
       </div>
       <div class="card-footer clr-code">
-      <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a>
+      {/* <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a> */}
+      <Link to="/detailsTwo"><small class="text-dark">See More</small></Link>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectOneDetails = ({data}) => {
+const ProjectTwoDetails = ({data}) => {
     const {id, img, desc, title} = data;
     console.log(data);
 
@@ -17,4 +17,4 @@ const ProjectOneDetails = ({data}) => {
     );
 };
 
-export default ProjectOneDetails;
+export default ProjectTwoDetails;
