@@ -9,19 +9,19 @@ const data = [
     {
         id:"1",
         title:"Hospital details section",
-        desc:"The website is a pre tour package booking website. Here, user can choose his/her choice package and he/she also can book it through login.",
+        desc:"Here an user can find his/her desired hospital's location and details information as he is looking for. To get details information he/she has to be logged in.",
         img:img1
     },
     {
         id:"2",
         title:"Most frequently asked questions",
-        desc:"User can add any package to website. There is no specific security for the function. This is that part where user can control it. This project is also a MERN stack project.",
+        desc:"Most asked questions' ans have been given in this website about hospitals. So,  that an user can get most asked question's ans easily.",
         img:img2
     },
     {
         id:"3",
         title:"Login system",
-        desc:"There is global dashboard. User can add or delete any package. User can handle  Manage all orders functions. There is no restrictions for anyone.",
+        desc:"Through this login system we improve our system an user can get flexible service instantly. This website provides proper guideline and instruction to a user who looks for best hospital.",
         img:img3
     }
 ]

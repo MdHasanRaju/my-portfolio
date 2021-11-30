@@ -80,12 +80,8 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Website Development</h1>
                 <p className="p service__text p__color">
-                  I throw myself down among the
+                Web development is the work involved in developing a website for the Internet or an intranet.
                 </p>
-                <p className="p service__text p__color">
-                  tall grass by the stream as I lie
-                </p>
-                <p className="p service__text p__color">close to the earth.</p>
               </div>
             </div>
           </div>
@@ -113,12 +109,7 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Marketing & Reporting</h1>
                 <p className="p service__text p__color">
-                  I throw myself down among the
-                </p>
-                <p className="p service__text p__color">
-                  tall grass by the stream as I lie
-                </p>
-                <p className="p service__text p__color">close to the earth.</p>
+                Marketing reporting is the process of gathering actionable data that help you to reach your goals.</p>
               </div>
             </div>
           </div>
@@ -145,12 +136,7 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Mobile App Development</h1>
                 <p className="p service__text p__color">
-                  I throw myself down among the
-                </p>
-                <p className="p service__text p__color">
-                  tall grass by the stream as I lie
-                </p>
-                <p className="p service__text p__color">close to the earth.</p>
+                Start With Fully-Customizable Flutter Widgets To Develop Native Interfaces In Minutes.</p>
               </div>
             </div>
           </div>
@@ -176,14 +162,9 @@ function Services() {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Marketing & Reporting</h1>
+                <h1 className="service__text">Mobile-Optimised Website</h1>
                 <p className="p service__text p__color">
-                  I throw myself down among the
-                </p>
-                <p className="p service__text p__color">
-                  tall grass by the stream as I lie
-                </p>
-                <p className="p service__text p__color">close to the earth.</p>
+                A mobile optimized site is a far more advanced website. We make responsive website</p>
               </div>
             </div>
           </div>
@@ -208,14 +189,9 @@ function Services() {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Mobile App Development</h1>
+                <h1 className="service__text">Membership System</h1>
                 <p className="p service__text p__color">
-                  I throw myself down among the
-                </p>
-                <p className="p service__text p__color">
-                  tall grass by the stream as I lie
-                </p>
-                <p className="p service__text p__color">close to the earth.</p>
+                Our Membership automates the management of membership within associations, organizations.</p>
               </div>
             </div>
           </div>

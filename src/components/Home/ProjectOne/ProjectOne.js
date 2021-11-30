@@ -9,7 +9,7 @@ const data = [
     {
         id:"1",
         title:"Products collection",
-        desc:"This is a completely MERN stack project. It is also a Niche related website. Here. Here, user interaction and admin interaction are added.",
+        desc:"The following products are available for customers.It is completely MERN stack project. It is also a Niche related website. Here. Here, user interaction and admin interaction are added.",
         img:img1
     },
     {
