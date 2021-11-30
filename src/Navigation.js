@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
           <Navbar.Brand style={{color:"rgb(140, 236, 183)"}} href="#home">_MYPortfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
