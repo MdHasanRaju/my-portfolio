@@ -28,11 +28,18 @@ const data = [
 
 const ProjectOne = () => {
     return (
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
             {
                 data.map(d => <ProjectOneDetails data={d}></ProjectOneDetails>)
             }
         </div>
+        <div className="text-center">
+        <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://assignment-12-76cbb.web.app/">Live-Site</a>
+        <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://github.com/MdHasanRaju/FASTZone-client-site/">Frontend-code</a>
+        <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://github.com/MdHasanRaju/FASTZone-server-site/">Backend-code</a>
+    </div>
+        </>
     );
 };
 

@@ -27,11 +27,18 @@ const data = [
 
 const ProjectTwo = () => {
     return (
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
             {
                 data.map(d => <ProjectTwoDetails data={d}></ProjectTwoDetails>)
             }
         </div>
+        <div className="text-center">
+            <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://explore-new-worlds-with-us.web.app/">Live-Site</a>
+            <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://github.com/MdHasanRaju/tourism-client-site">Frontend-code</a>
+            <a style={{ marginRight:"10px", fontWeight:"bold"}} target="_blank" href="https://github.com/MdHasanRaju/tourism-server-site">Backend-code</a>
+        </div>
+        </>
     );
 };
 

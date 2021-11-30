@@ -32,7 +32,7 @@ const Projects = () => {
         <p class="card-text">This is a completely MERN stack project. It is also a Niche related website. Here, customer/user dashboard and admin dashboard are included.</p>
       </div>
       <div class="card-footer clr-code" >
-        <Link to="/detailsOne"><small class="text-dark">See More</small></Link>
+        <Link style={{textDecorationColor: "black", fontSize:"18px"}} to="/detailsOne"><small class="text-dark">See More</small></Link>
         {/* <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a> */}
       </div>
     </div>
@@ -46,7 +46,7 @@ const Projects = () => {
       </div>
       <div class="card-footer clr-code">
       {/* <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a> */}
-      <Link to="/detailsTwo"><small class="text-dark">See More</small></Link>
+      <Link style={{textDecorationColor: "black", fontSize:"18px"}} to="/detailsTwo"><small class="text-dark">See More</small></Link>
       </div>
     </div>
   </div>
@@ -58,7 +58,8 @@ const Projects = () => {
         <p class="card-text">It is a Information based website. A stranger can find his targeted hospital's information through this website. Here, Some best Hospitals information and details are available..</p>
       </div>
       <div class="card-footer clr-code">
-      <a target="_blank" className="text-decoration-none" href="https://best-hospitals-in-bangladesh.web.app/"><small class="text-dark">Visit Site</small></a>
+      {/* <a target="_blank" className="text-decoration-none" href="https://best-hospitals-in-bangladesh.web.app/"><small class="text-dark">Visit Site</small></a> */}
+      <Link style={{textDecorationColor: "black", fontSize:"18px"}} to="/detailsThree"><small class="text-dark">See More</small></Link>
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@ const ProjectOneDetails = ({data}) => {
     console.log(data);
 
     return (
-        <div class="col">
+    <div class="col">
     <div class="card">
       <img src={img} class="card-img-top" alt="..."/>
       <div class="card-body">
