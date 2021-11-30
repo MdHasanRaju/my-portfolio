@@ -1,16 +1,29 @@
-import React from 'react';
+import  React, { useEffect } from 'react';
+
 import './Projects.css';
 import { Card, Col, Row } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import a10 from '../../../images/assignment-10.png'
 import a11 from '../../../images/a11.png'
 import a12 from '../../../images/assignment12.png'
 
+
 const Projects = () => {
+
+  useEffect(() => {
+    AOS.init({
+      offset:100,
+      duration:1000,
+      easing:'ease'
+    });
+  })
+
     return (
         <div className="container mx-auto my-5">
-            <h1 className="text-center mb-4  title">PROJECTS</h1>
+            <h1 className="text-center mb-4  title" data-aos="fade-down">PROJECTS</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
+  <div class="col" data-aos="fade-right">
     <div class="card h-100" style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a12} class="card-img-top" alt="..."/>
       <div class="card-body">
@@ -22,7 +35,7 @@ const Projects = () => {
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col" data-aos="fade-up">
     <div class="card h-100 " style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a11} class="card-img-top" alt="..."/>
       <div class="card-body">
@@ -34,7 +47,7 @@ const Projects = () => {
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col" data-aos="fade-left">
     <div class="card h-100" style={{backgroundColor:"#191919", color:"white"}}>
       <img src={a10} class="card-img-top" alt="..."/>
       <div class="card-body">

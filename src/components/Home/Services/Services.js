@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Services.css";
 
 function Services() {
+
+  useEffect(() => {
+    AOS.init({
+      offset:100,
+      duration:1200,
+      easing:'ease'
+    });
+  })
+
   return (
     <div className="service component__space my-5"  id="Services">
-      <div className="heading mb-5">
+      <div className="heading mb-5" data-aos="fade-down">
         <h1 className="heading">MY SERVICES</h1>
         <p className="heading p__color">
           There are many variations of passages of Lorem Ipsum available,
@@ -16,7 +27,7 @@ function Services() {
 
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-down-left">
             <div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -47,7 +58,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-down-left">
             <div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -79,7 +90,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-up-left">
             <div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -112,7 +123,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-up-right"> 
             <div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -144,7 +155,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-down-left">
             <div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -177,7 +188,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4" data-aos="fade-down-right">
             <div className="service__box pointer">
               <div className="icon">
                 <svg
