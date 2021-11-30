@@ -9,7 +9,7 @@ const AboutMe = () => {
     useEffect(() => {
         AOS.init({
           offset:100,
-          duration:1200,
+          duration:1500,
           easing:'ease'
         });
       })

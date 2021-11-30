@@ -14,7 +14,7 @@ const Projects = () => {
   useEffect(() => {
     AOS.init({
       offset:100,
-      duration:1000,
+      duration:1300,
       easing:'ease'
     });
   })
