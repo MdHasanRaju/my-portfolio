@@ -13,3 +13,9 @@
     border: 1px solid darkcyan;
     color: black;
 }
+
+.tggle:hover {
+    transition: 0.5s;
+    font-weight: 400;
+    color: rgb(67, 200, 138) !important;
+}
