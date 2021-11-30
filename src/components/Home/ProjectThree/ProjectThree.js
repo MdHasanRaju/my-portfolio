@@ -15,7 +15,7 @@ const data = [
     {
         id:"2",
         title:"Most frequently asked questions",
-        desc:"Most asked questions' ans have been given in this website about hospitals. So,  that an user can get most asked question's ans easily.",
+        desc:"Most asked questions' ans have been given in this website about hospitals. So,  that an user can get most asked question's ans easily. By our services we hope user's harrasment will be reduced. ",
         img:img2
     },
     {
