@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <Container>
-        <div style={{ padding: "100px 0px" }}>
+        <div style={{ padding: "150px 0px" }}>
           <Row>
             <Col sm={6} style={{ margin: "auto 0px" }}>
               <div style={{ textAlign: "start", color: "white" }}>
