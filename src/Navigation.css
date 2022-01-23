@@ -3,15 +3,16 @@
 }
 
 .clr-code{
-    background-color: rgb(140, 236, 183);
-    border: 1px solid darkcyan;
-    color: black;
+    background-color: rgb(140, 236, 183)!important;
+    /* border: 1px solid darkcyan!important; */
+    color: black!important;
+
 }
 
 .clr-code:hover{
-    background-color: rgb(72, 206, 143);
-    border: 1px solid darkcyan;
-    color: black;
+    background-color: rgb(72, 206, 143)!important;
+    /* border: 1px solid darkcyan!important; */
+    color: black!important;
 }
 
 .tggle:hover {

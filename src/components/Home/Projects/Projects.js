@@ -42,7 +42,7 @@ const Projects = () => {
       <img src={a11} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">EXPLORE-NEW-WORLDS-WITH-US</h5>
-        <p class="card-text">This is a tourism website. Here, An User can pre-book Any tour package.</p>
+        <p class="card-text">This is a tourism website. Here, An User can pre-book Any tour package. User can add his or her desired tour package. Google Login system also added here.</p>
       </div>
       <div class="card-footer clr-code">
       {/* <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a> */}

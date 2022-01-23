@@ -1,32 +1,104 @@
-import React from 'react';
-import './Navigation.css';
-import {  Container, Nav, Navbar , Button} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Navigation.css";
+import { Container, Nav, Navbar, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Navigation = () => {
-    return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand style={{color:"rgb(140, 236, 183)"}} href="#home">_MYPortfolio</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
-            <Link className="tggle" style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} to="/home">Home</Link>
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <Container>
+        <Navbar.Brand style={{ color: "rgb(140, 236, 183)" }} href="#home">
+          _MYPortfolio
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/home"
+            >
+              Home
+            </NavHashLink>
+            {/* <HashLink to="/some/path#with-hash-fragment">Link to Hash Fragment</HashLink> */}
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/home/#about"
+            >
+              About
+            </NavHashLink>
 
-            <Nav.Link className="tggle" style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} href="/home/#about">About</Nav.Link>
-
-            <Link className="tggle" style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} to="/blogs">Blogs</Link>
-              <Link className="tggle" style={{margin:"auto 5px", textDecoration:"none", color:"lightgray"}} to="/contact">Contact Me</Link>
-              <Nav.Link className="tggle" style={{margin:"auto 0" ,color:"lightgray"}} target="_blank" href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A" download>Resume</Nav.Link>
-              <Nav.Link >
-              <Button style={{borderRadius:"40px", padding:"10px 30px"}} className="clr-code" >Case Studies</Button>{' '}
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-        </Navbar>
-        
-    );
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/blogs"
+            >
+              Blogs
+            </NavHashLink>
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/contact"
+            >
+              Contact Me
+            </NavHashLink>
+            <Nav.Link
+              className="tggle"
+              style={{ margin: "auto 5px", color: "lightgray" }}
+              target="_blank"
+              href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
+              download
+            >
+              Resume
+            </Nav.Link>
+            <NavHashLink
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/"
+            >
+              <Button
+                style={{
+                  borderRadius: "40px",
+                  padding: "10px 30px",
+                  margin: "auto 5px",
+                  
+                }}
+                className="clr-code"
+              >
+                Case Studies
+              </Button>{" "}
+            </NavHashLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default Navigation;
