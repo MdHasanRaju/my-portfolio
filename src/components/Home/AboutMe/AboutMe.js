@@ -16,7 +16,7 @@ const AboutMe = () => {
 
     return (
         
-        <div id="about" style={{margin:"100px 0px"}} class="bg-dark py-5">
+        <div id="about" style={{margin:"150px 0px"}} class="bg-dark py-5">
         <div class="container">
             <div class="text-center text-white pb-3" data-aos="fade-down">
                 <h1>ABOUT ME</h1>

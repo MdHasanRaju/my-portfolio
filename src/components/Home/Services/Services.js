@@ -14,7 +14,7 @@ function Services() {
   })
 
   return (
-    <div className="service component__space my-5"  id="Services">
+    <div className="service component__space"  id="Services">
       <div className="heading mb-5" data-aos="fade-down">
         <h1 className="heading">MY SERVICES</h1>
         <p className="heading p__color">
