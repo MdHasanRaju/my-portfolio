@@ -90,7 +90,7 @@ const Skills = () => {
           <div className="skill-content col-lg-5 line-height-5">
             <h3>My creative skills &amp; experiences.</h3>
             <p className="lh-lg">
-              I'm obsessed with making things and even more obsessed with making things better. I've been in the web development field since 2021. I've designed several websites.My specialty is front-end web development. Making figma to HTML and turning it into beautiful design, semantic HTML CSS3. Moreover, I've created some MERN stack projects Besides mentioned skills with the percentage, I have experience in <u>Bootstrap</u>, <u>React Bootstrap</u>,{" "}
+              I'm obsessed with making things and even more obsessed with making things better. I've been in the web development field since 2021. I've designed several websites.My specialty is front-end web development. Making figma to HTML and turning it into beautiful design, semantic HTML CSS3. Moreover, I've created some MERN stack projects. Besides mentioned skills with the percentage, I have experience in <u>Bootstrap</u>, <u>React Bootstrap</u>,{" "}
               <u>Tailwind</u>, <u>MUI</u>, <u>Firebase Authentication</u>,{" "} <u>React-router-dom</u>, <u>Github</u>, <u>Netlify</u>,{" "} <u>Heroku</u>, <u>Node JS</u>, <u>AOS</u>, <u>API</u>,{" "} <u>Some react libraries</u>.
             </p>
             <NavHashLink to="/home/#about"><button className="btn btn-success">Read more</button></NavHashLink>
