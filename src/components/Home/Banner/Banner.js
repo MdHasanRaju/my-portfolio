@@ -4,10 +4,98 @@ import Blog3 from "../../../images/undraw_coding_re_iv62.svg";
 import "./Banner.css";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
+import Particles from "react-tsparticles";
 
 const Banner = () => {
+  const particlesInit = (main) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
+
   return (
     <div className="banner">
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 60,
+                duration: 2.5,
+                opacity: 0.5,
+                size: 40,
+              },
+              push: {
+                quantity: 6,
+              },
+              repulse: {
+                distance: 80,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: false,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: true,
+              speed: 3,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 100,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "triangle",
+            },
+            size: {
+              random: true,
+              value: 4,
+            },
+          },
+          detectRetina: true,
+        }}
+      />
       <Container>
         <div style={{ padding: "160px 0px" }}>
           <Row>
@@ -39,16 +127,18 @@ const Banner = () => {
                   I am Professional UI/UX Designer With Frontend And Backend Web
                   Development Skills Based on Client Desire.
                 </p>
-                <Link to="/contact"><Button
-                  className="clr-code"
-                  style={{
-                    marginTop: "10px",
-                    padding: "8px 20px",
-                    fontWeight: "light",
-                  }}
-                >
-                  Hire Me
-                </Button></Link>
+                <Link to="/contact">
+                  <Button
+                    className="clr-code"
+                    style={{
+                      marginTop: "10px",
+                      padding: "8px 20px",
+                      fontWeight: "light",
+                    }}
+                  >
+                    Hire Me
+                  </Button>
+                </Link>
               </div>
             </Col>
 
