@@ -1,0 +1,12 @@
+.progress-bar {
+    background: transparent !important;
+    margin-bottom:10px !important;
+}
+.lang{
+    margin-bottom: -10px !important;
+    position: absolute;
+    top: 5px;
+}
+.info {
+    position: relative;
+}

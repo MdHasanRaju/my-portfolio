@@ -3,13 +3,14 @@ import "./Navigation.css";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
+import logo from './images/cover-removebg-preview.png';
 
 const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand style={{ color: "rgb(140, 236, 183)" }} href="#home">
-          _MYPortfolio
+          <img height="60px" weight="65px" src={logo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,6 +41,19 @@ const Navigation = () => {
               to="/home/#about"
             >
               About
+            </NavHashLink>
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/home/#projects"
+            >
+              Projects
             </NavHashLink>
 
             <NavHashLink

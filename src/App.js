@@ -15,6 +15,7 @@ import ProjectOne from './components/Home/ProjectOne/ProjectOne';
 import ProjectTwo from './components/Home/ProjectTwo';
 import ProjectThree from './components/Home/ProjectThree/ProjectThree';
 import Footer from './components/Home/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
