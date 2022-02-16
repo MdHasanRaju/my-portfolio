@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import "./Projects.css";
 import { Card, Col, Row } from "react-bootstrap";
+import { Fade, JackInTheBox, Slide, Bounce, Zoom, Rotate, Roll} from "react-awesome-reveal";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import a10 from "../../../images/assignment-10.png";
@@ -18,14 +19,16 @@ const Projects = () => {
     });
   });
 
+
+
   return (
     
     <div id="projects" className="container mx-auto my-5">
-      <h1 className="text-center mb-4  title" data-aos="fade-down">
+      <Slide><h1 className="text-center mb-4 title">
         PROJECTS
-      </h1>
+      </h1></Slide>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" data-aos="fade-right">
+        <JackInTheBox><div class="col">
           <div
             class="card h-100"
             style={{ backgroundColor: "#191919", color: "white" }}
@@ -49,8 +52,9 @@ const Projects = () => {
               {/* <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a> */}
             </div>
           </div>
-        </div>
-        <div class="col" data-aos="fade-up">
+        </div></JackInTheBox>
+
+        <Bounce><div class="col">
           <div
             class="card h-100 "
             style={{ backgroundColor: "#191919", color: "white" }}
@@ -74,8 +78,9 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div class="col" data-aos="fade-left">
+        </div></Bounce>
+
+        <Zoom><div class="col">
           <div
             class="card h-100"
             style={{ backgroundColor: "#191919", color: "white" }}
@@ -99,7 +104,8 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div></Zoom>
+
       </div>
     </div>
   );

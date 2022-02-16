@@ -28,7 +28,7 @@ const data = [
 const ProjectTwo = () => {
     return (
         <>
-        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+        <div style={{marginTop:"80px"}} class="row row-cols-1 row-cols-md-3 g-4">
             {
                 data.map(d => <ProjectTwoDetails data={d}></ProjectTwoDetails>)
             }

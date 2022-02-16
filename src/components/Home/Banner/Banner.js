@@ -1,9 +1,9 @@
 import React from "react";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Container, Row, Button, Nav} from "react-bootstrap";
 import Blog3 from "../../../images/undraw_coding_re_iv62.svg";
 import "./Banner.css";
 import Typewriter from "typewriter-effect";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Particles from "react-tsparticles";
 
 const Banner = () => {
@@ -127,18 +127,34 @@ const Banner = () => {
                   I am Professional UI/UX Designer With Frontend And Backend Web
                   Development Skills Based on Client Desire.
                 </p>
-                <Link to="/contact">
-                  <Button
-                    className="clr-code"
-                    style={{
-                      marginTop: "10px",
-                      padding: "8px 20px",
-                      fontWeight: "light",
-                    }}
-                  >
-                    Hire Me
-                  </Button>
-                </Link>
+                
+                <Nav.Link
+                style={{
+                  borderRadius: "20px",
+                  padding: "10px 35px",
+                  marginTop: "15px",
+                  border:"none",
+                  textDecoration:"none",
+                  width:"125px"
+                }}
+              className="clr-code"
+              
+              href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
+              target="_blank"              
+            >
+              {/* <Button
+                style={{
+                  borderRadius: "40px",
+                  padding: "10px 30px",
+                  margin: "auto 5px",
+                  border:"none"
+                }}
+                className="clr-code"
+              >
+            </Button>{" "} */}
+            Resume
+            </Nav.Link>
+
               </div>
             </Col>
 
