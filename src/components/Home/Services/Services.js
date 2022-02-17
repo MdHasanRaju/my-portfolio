@@ -1,34 +1,36 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Services.css";
+import { Fade, JackInTheBox, Slide, Bounce, Zoom, Rotate, Roll, Flip} from "react-awesome-reveal";
 
 function Services() {
-
   useEffect(() => {
     AOS.init({
-      offset:100,
-      duration:1200,
-      easing:'ease'
+      offset: 100,
+      duration: 1200,
+      easing: "ease",
     });
-  })
+  });
 
   return (
-    <div className="service component__space"  id="Services">
-      <div className="heading mb-5" data-aos="fade-down">
-        <h1 className="heading">MY SERVICES</h1>
-        <p className="heading p__color">
-          There are many variations of passages of Lorem Ipsum available,
-        </p>
-        <p className="heading p__color">
-          but the majority have suffered alteration.
-        </p>
+    <div className="service component__space" id="Services">
+      <div style={{textAlign:"justify"}} className="heading mb-5">
+        <Fade>
+          <h1 className="heading">MY SERVICES</h1>
+          <p className="heading p__color">
+            There are many variations of passages of Lorem Ipsum available,
+          </p>
+          <p className="heading p__color">
+            but the majority have suffered alteration.
+          </p>
+        </Fade>
       </div>
 
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-4" data-aos="fade-down-left">
-            <div className="service__box pointer">
+          <div className="col-lg-4">
+            <Roll><div className="service__box pointer">
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -46,7 +48,7 @@ function Services() {
                 </svg>
               </div>
               <div className="service__meta">
-                <h1 className="service__text">Business Stratagy</h1>
+                <h1 className="service__text">Business Strategy</h1>
                 <p className="p service__text p__color">
                   I throw myself down among the
                 </p>
@@ -55,11 +57,11 @@ function Services() {
                 </p>
                 <p className="p service__text p__color">close to the earth.</p>
               </div>
-            </div>
+            </div></Roll>
           </div>
 
-          <div className="col-lg-4" data-aos="fade-down-left">
-            <div className="service__box pointer">
+          <div className="col-lg-4">
+            <Flip><div className="service__box pointer">
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -80,14 +82,15 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Website Development</h1>
                 <p className="p service__text p__color">
-                Web development is the work involved in developing a website for the Internet or an intranet.
+                  Web development is the work involved in developing a website
+                  for the Internet or an intranet.
                 </p>
               </div>
-            </div>
+            </div></Flip>
           </div>
 
-          <div className="col-lg-4" data-aos="fade-up-left">
-            <div className="service__box pointer">
+          <div className="col-lg-4">
+            <Bounce><div className="service__box pointer">
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -109,13 +112,15 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Marketing & Reporting</h1>
                 <p className="p service__text p__color">
-                Marketing reporting is the process of gathering actionable data that help you to reach your goals.</p>
+                  Marketing reporting is the process of gathering actionable
+                  data that help you to reach your goals.
+                </p>
               </div>
-            </div>
+            </div></Bounce>
           </div>
 
-          <div className="col-lg-4" data-aos="fade-up-right"> 
-            <div className="service__box pointer">
+          <div className="col-lg-4">
+            <Slide><div className="service__box pointer">
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -136,13 +141,15 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Mobile App Development</h1>
                 <p className="p service__text p__color">
-                Start With Fully-Customizable Flutter Widgets To Develop Native Interfaces In Minutes.</p>
+                  Start With Fully-Customizable Flutter Widgets To Develop
+                  Native Interfaces In Minutes.
+                </p>
               </div>
-            </div>
+            </div></Slide>
           </div>
 
-          <div className="col-lg-4" data-aos="fade-down-left">
-            <div className="service__box pointer">
+          <div className="col-lg-4">
+            <Zoom><div className="service__box pointer">
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -164,13 +171,16 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Mobile-Optimised Website</h1>
                 <p className="p service__text p__color">
-                A mobile optimized site is a far more advanced website. We make responsive website</p>
+                  A mobile optimized site is a far more advanced website. We
+                  make responsive website
+                </p>
               </div>
-            </div>
+            </div></Zoom>
           </div>
 
-          <div className="col-lg-4" data-aos="fade-down-right">
+          <div className="col-lg-4">
             <div className="service__box pointer">
+            <Bounce>
               <div className="icon">
                 <svg
                   stroke="currentColor"
@@ -191,10 +201,15 @@ function Services() {
               <div className="service__meta">
                 <h1 className="service__text">Membership System</h1>
                 <p className="p service__text p__color">
-                Our Membership automates the management of membership within associations, organizations.</p>
+                  Our Membership automates the management of membership within
+                  associations, organizations.
+                </p>
               </div>
+              </Bounce>
             </div>
           </div>
+          
+
         </div>
       </div>
     </div>

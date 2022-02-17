@@ -39,8 +39,10 @@ h1.heading {
     font-weight: 400;
     margin-bottom: 23px;
     display: inline-flex;
+    text-align: center;
     color:rgb(140, 236, 183)
   }
+
   p.service__text.p__color {
     margin-bottom: 0;
   }

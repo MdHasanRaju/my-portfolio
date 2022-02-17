@@ -138,9 +138,10 @@ const Banner = () => {
                   width:"125px"
                 }}
               className="clr-code"
-              
+              download
+              target="_blank" 
               href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
-              target="_blank"              
+                          
             >
               {/* <Button
                 style={{
