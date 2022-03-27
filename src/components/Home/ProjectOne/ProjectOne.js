@@ -4,7 +4,6 @@ import img2 from '../../../images/s5.png';
 import img3 from '../../../images/s7.png';
 import ProjectOneDetails from '../ProjectOneDetails/ProjectOneDetails';
 
-
 const data = [
     {
         id:"1",
@@ -21,7 +20,8 @@ const data = [
     {
         id:"3",
         title:"Admin dashboard",
-        desc:"Here Admin can make other. All admin functionalities have been applied. An admin can remove any item from home page and also can add any item from his website",
+        way:'admin@admin.com, 123456.',
+        desc:"Admin can handle full website. He can manage all functionalities like removing items, receiving orders, add products. An Admin can make others admin.",
         img:img3
     }
 ]

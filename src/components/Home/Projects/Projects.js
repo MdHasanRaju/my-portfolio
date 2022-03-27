@@ -8,6 +8,10 @@ import "aos/dist/aos.css";
 import a10 from "../../../images/assignment-10.png";
 import a11 from "../../../images/a11.png";
 import a12 from "../../../images/assignment12.png";
+import im1 from "../../../images/12.png";
+import im2 from "../../../images/11.png";
+import im3 from "../../../images/10.png";
+
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -20,7 +24,6 @@ const Projects = () => {
   });
 
 
-
   return (
     
     <div id="projects" className="container mx-auto my-5">
@@ -30,36 +33,45 @@ const Projects = () => {
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <JackInTheBox><div class="col">
           <div
-            class="card h-100"
-            style={{ backgroundColor: "#191919", color: "white" }}
+            class="preview rounded"
+            style={{color: "white" }}
           >
-            <img src={a12} class="card-img-top" alt="..." />
-            <div class="card-body">
+            <div className="box box1"></div>
+            {/* <img src={a12} class="card-img-top" alt="..." /> */}
+            {/* <div class="card-body">
               <h5 class="card-title">THE ALL-NEW STYLISH AND MODERN</h5>
               <p class="card-text">
                 This is a completely MERN stack project. It is also a Niche
                 related website. Here, customer/user dashboard and admin
                 dashboard are included.
               </p>
-            </div>
-            <div class="card-footer clr-code">
+
+            </div> */}
+            <Link className="visit "
+                // style={{ textDecorationColor: "black", fontSize: "18px" }}
+                to="/detailsOne"
+              >
+                See Details
+              </Link>
+            {/* <div class="card-footer clr-code">
               <Link
                 style={{ textDecorationColor: "black", fontSize: "18px" }}
                 to="/detailsOne"
               >
                 <small class="text-dark">See More</small>
               </Link>
-              {/* <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a> */}
-            </div>
+              <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a>
+            </div> */}
           </div>
         </div></JackInTheBox>
 
         <Bounce><div class="col">
           <div
-            class="card h-100 "
-            style={{ backgroundColor: "#191919", color: "white" }}
+            class="preview rounded"
+            style={{color: "white" }}
           >
-            <img src={a11} class="card-img-top" alt="..." />
+            <div className="box box2"></div>
+            {/* <img src={a11} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">EXPLORE-NEW-WORLDS-WITH-US</h5>
               <p class="card-text">
@@ -69,23 +81,25 @@ const Projects = () => {
               </p>
             </div>
             <div class="card-footer clr-code">
-              {/* <a target="_blank" className="text-decoration-none" href="https://explore-new-worlds-with-us.web.app/"><small class="text-dark">Visit Site</small></a> */}
-              <Link
-                style={{ textDecorationColor: "black", fontSize: "18px" }}
+              
+             
+            </div> */}
+             <Link
+                className="visit"
                 to="/detailsTwo"
               >
-                <small class="text-dark">See More</small>
+                See Details
               </Link>
-            </div>
           </div>
         </div></Bounce>
 
         <Zoom><div class="col">
           <div
-            class="card h-100"
-            style={{ backgroundColor: "#191919", color: "white" }}
+            class="preview rounded"
+            style={{ color: "white"}}
           >
-            <img src={a10} class="card-img-top" alt="..." />
+            <div className="box box3"></div>
+            {/* <img src={a10} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">BEST-HOSPITALS-IN-BANGLADESH</h5>
               <p class="card-text">
@@ -93,16 +107,14 @@ const Projects = () => {
                 targeted hospital's information through this website. Here, Some
                 best Hospitals information and details are available..
               </p>
-            </div>
-            <div class="card-footer clr-code">
-              {/* <a target="_blank" className="text-decoration-none" href="https://best-hospitals-in-bangladesh.web.app/"><small class="text-dark">Visit Site</small></a> */}
+            </div> */}
+           
               <Link
-                style={{ textDecorationColor: "black", fontSize: "18px" }}
+              class="visit"
                 to="/detailsThree"
               >
-                <small class="text-dark">See More</small>
+                See Details
               </Link>
-            </div>
           </div>
         </div></Zoom>
 
