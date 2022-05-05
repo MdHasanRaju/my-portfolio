@@ -2,7 +2,15 @@ import React, { useEffect } from "react";
 
 import "./Projects.css";
 import { Card, Col, Row } from "react-bootstrap";
-import { Fade, JackInTheBox, Slide, Bounce, Zoom, Rotate, Roll} from "react-awesome-reveal";
+import {
+  Fade,
+  JackInTheBox,
+  Slide,
+  Bounce,
+  Zoom,
+  Rotate,
+  Roll,
+} from "react-awesome-reveal";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import a10 from "../../../images/assignment-10.png";
@@ -23,22 +31,18 @@ const Projects = () => {
     });
   });
 
-
   return (
-    
     <div id="projects" className="container mx-auto my-5">
-      <Slide><h1 className="text-center mb-4 title">
-        PROJECTS
-      </h1></Slide>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <JackInTheBox><div class="col">
-          <div
-            class="preview rounded"
-            style={{color: "white" }}
-          >
-            <div className="box box1"></div>
-            {/* <img src={a12} class="card-img-top" alt="..." /> */}
-            {/* <div class="card-body">
+      <Slide>
+        <h1 className="text-center mb-4 title">PROJECTS</h1>
+      </Slide>
+      <div class="row row-cols-1 row-cols-md-3  g-4">
+        <JackInTheBox>
+          <div class="col">
+            <div class="preview rounded" style={{ color: "white" }}>
+              <div className="box box1"></div>
+              {/* <img src={a12} class="card-img-top" alt="..." /> */}
+              {/* <div class="card-body">
               <h5 class="card-title">THE ALL-NEW STYLISH AND MODERN</h5>
               <p class="card-text">
                 This is a completely MERN stack project. It is also a Niche
@@ -47,13 +51,14 @@ const Projects = () => {
               </p>
 
             </div> */}
-            <Link className="visit "
+              <Link
+                className="visit "
                 // style={{ textDecorationColor: "black", fontSize: "18px" }}
                 to="/detailsOne"
               >
-                See Details
+                Details
               </Link>
-            {/* <div class="card-footer clr-code">
+              {/* <div class="card-footer clr-code">
               <Link
                 style={{ textDecorationColor: "black", fontSize: "18px" }}
                 to="/detailsOne"
@@ -62,16 +67,15 @@ const Projects = () => {
               </Link>
               <a target="_blank" className="text-decoration-none " href="https://assignment-12-76cbb.web.app/"><small class="text-dark">Visit Site</small></a>
             </div> */}
+            </div>
           </div>
-        </div></JackInTheBox>
+        </JackInTheBox>
 
-        <Bounce><div class="col">
-          <div
-            class="preview rounded"
-            style={{color: "white" }}
-          >
-            <div className="box box2"></div>
-            {/* <img src={a11} class="card-img-top" alt="..." />
+        <Bounce>
+          <div class="col">
+            <div class="preview rounded" style={{ color: "white" }}>
+              <div className="box box2"></div>
+              {/* <img src={a11} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">EXPLORE-NEW-WORLDS-WITH-US</h5>
               <p class="card-text">
@@ -84,22 +88,18 @@ const Projects = () => {
               
              
             </div> */}
-             <Link
-                className="visit"
-                to="/detailsTwo"
-              >
-                See Details
+              <Link className="visit" to="/detailsTwo">
+                Details
               </Link>
+            </div>
           </div>
-        </div></Bounce>
+        </Bounce>
 
-        <Zoom><div class="col">
-          <div
-            class="preview rounded"
-            style={{ color: "white"}}
-          >
-            <div className="box box3"></div>
-            {/* <img src={a10} class="card-img-top" alt="..." />
+        <Zoom>
+          <div class="col">
+            <div class="preview rounded" style={{ color: "white" }}>
+              <div className="box box3"></div>
+              {/* <img src={a10} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">BEST-HOSPITALS-IN-BANGLADESH</h5>
               <p class="card-text">
@@ -108,16 +108,13 @@ const Projects = () => {
                 best Hospitals information and details are available..
               </p>
             </div> */}
-           
-              <Link
-              class="visit"
-                to="/detailsThree"
-              >
-                See Details
-              </Link>
-          </div>
-        </div></Zoom>
 
+              <Link class="visit" to="/detailsThree">
+                Details
+              </Link>
+            </div>
+          </div>
+        </Zoom>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function Services() {
 
       <div className="container">
         <div className="row g-4">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <Roll><div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -60,7 +60,7 @@ function Services() {
             </div></Roll>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <Flip><div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -89,7 +89,7 @@ function Services() {
             </div></Flip>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <Bounce><div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -119,7 +119,7 @@ function Services() {
             </div></Bounce>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <Slide><div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -148,7 +148,7 @@ function Services() {
             </div></Slide>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <Zoom><div className="service__box pointer">
               <div className="icon">
                 <svg
@@ -178,7 +178,7 @@ function Services() {
             </div></Zoom>
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-sm-6">
             <div className="service__box pointer">
             <Bounce>
               <div className="icon">

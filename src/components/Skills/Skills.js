@@ -87,7 +87,7 @@ const Skills = () => {
           <p>--what i know--</p>
         </div>
         <div className="skill-clm row ">
-          <div className="skill-content col-lg-5 line-height-5">
+          <div className="skill-content mt-3 col-lg-5 line-height-5">
             <h3>My creative skills &amp; experiences.</h3>
             <p className="lh-lg">
               I'm obsessed with making things and even more obsessed with making things better. I've been in the web development field since 2021. I've designed several websites.My specialty is front-end web development. Making figma to HTML and turning it into beautiful design, semantic HTML CSS3. Moreover, I've created some MERN stack projects. Besides mentioned skills with the percentage, I have experience in <u>Bootstrap</u>, <u>React Bootstrap</u>,
