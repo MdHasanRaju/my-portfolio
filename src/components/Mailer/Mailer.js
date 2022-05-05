@@ -16,7 +16,7 @@ const Mailer = () => {
     }
 
     return (
-        <div className="container border" style={{marginTop:"100px", padding:"20px 10px", minWidth:"350px", maxWidth:"50%", backgroundImage:`url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuw_C9TmXXBy-9q5UZdv3jxslpK9qn_bBmiA&usqp=CAU')`, backgroundPosition:"center", backgroundSize:"cover"}}>
+        <div className="container border text-light" style={{marginTop:"100px", padding:"20px 10px", minWidth:"350px", maxWidth:"50%", backgroundImage:`url('https://t4.ftcdn.net/jpg/02/69/27/55/360_F_269275503_fL3Dx8hgvCDgrnuvbm8XLPHJ461QIM4o.jpg')`, backgroundPosition:"center", backgroundSize:"cover"}}>
             <h2 style={{marginTop:"30px", textAlign:"center"}}>Contact Form</h2>
             <form className="row" style={{margin:"0 auto"}} onSubmit={sendEmail}>
                 <label>Name</label>
