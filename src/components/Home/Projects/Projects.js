@@ -25,6 +25,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   useEffect(() => {
     AOS.init({
+      once:true,
       offset: 100,
       duration: 1300,
       easing: "ease",
@@ -33,11 +34,11 @@ const Projects = () => {
 
   return (
     <div id="projects" className="container mx-auto my-5">
-      <Slide>
+      <Slide triggerOnce={true}>
         <h1 className="text-center mb-4 title">PROJECTS</h1>
       </Slide>
       <div class="row row-cols-1 row-cols-md-3  g-4">
-        <JackInTheBox>
+        <JackInTheBox triggerOnce={true}>
           <div class="col">
             <div class="preview rounded" style={{ color: "white" }}>
               <div className="box box1"></div>
@@ -71,7 +72,7 @@ const Projects = () => {
           </div>
         </JackInTheBox>
 
-        <Bounce>
+        <Bounce triggerOnce={true}>
           <div class="col">
             <div class="preview rounded" style={{ color: "white" }}>
               <div className="box box2"></div>
@@ -95,7 +96,7 @@ const Projects = () => {
           </div>
         </Bounce>
 
-        <Zoom>
+        <Zoom triggerOnce={true}>
           <div class="col">
             <div class="preview rounded" style={{ color: "white" }}>
               <div className="box box3"></div>

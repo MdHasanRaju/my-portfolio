@@ -11,11 +11,21 @@ import { NavHashLink } from "react-router-hash-link";
 const Skills = () => {
   useEffect(() => {
     AOS.init({
+      once: true,
       offset: 100,
       duration: 1300,
       easing: "ease",
     });
   });
+
+  const line = {
+    borderBottom: "1px solid white",
+    height: "1px",
+    width: "40px",
+    marginX: "auto",
+    display: "inline-block",
+    marginBottom: "3px",
+  };
 
   // const [ progress ,setProgress] = useState(0);
 
@@ -80,20 +90,35 @@ const Skills = () => {
     //   </div>
     // </div>
 
-    <section className="skill-section bg-dark py-4 text-light my-5">
+    <section className="skill-section bg-dark py-5 text-light">
       <div className="container">
         <div className="skill-title text-center mb-5">
-          <h1 data-aos="fade-down  title">My skills</h1>
-          <p>--what i know--</p>
+          <h1 data-aos="fade-down title">My skills</h1>
+          <div>
+            <div style={line}></div>
+            <span>what i know</span>
+            <div style={line}></div>
+          </div>
         </div>
-        <div className="skill-clm row ">
+        <div className="skill-clm row g-4">
           <div className="skill-content mt-3 col-lg-5 line-height-5">
             <h3>My creative skills &amp; experiences.</h3>
             <p className="lh-lg">
-              I'm obsessed with making things and even more obsessed with making things better. I've been in the web development field since 2021. I've designed several websites.My specialty is front-end web development. Making figma to HTML and turning it into beautiful design, semantic HTML CSS3. Moreover, I've created some MERN stack projects. Besides mentioned skills with the percentage, I have experience in <u>Bootstrap</u>, <u>React Bootstrap</u>,
-              <u>Tailwind</u>, <u>ES6</u>, <u>MUI</u>, <u>Firebase Authentication</u>, <u>React-router-dom</u>, <u>Github</u>, <u>Netlify</u>, <u>Heroku</u>, <u>Node JS</u>, <u>AOS</u>, <u>API</u>, <u>Some react libraries</u>.
+              I'm obsessed with making things and even more obsessed with making
+              things better. I've been in the web development field since 2021.
+              I've designed several websites.My specialty is front-end web
+              development. Making figma to HTML and turning it into beautiful
+              design, semantic HTML CSS3. Moreover, I've created some MERN stack
+              projects. Besides mentioned skills with the percentage, I have
+              experience in <u>Bootstrap</u>, <u>React Bootstrap</u>,
+              <u>Tailwind</u>, <u>ES6</u>, <u>MUI</u>,{" "}
+              <u>Firebase Authentication</u>, <u>React-router-dom</u>,{" "}
+              <u>Github</u>, <u>Netlify</u>, <u>Heroku</u>, <u>Node JS</u>,{" "}
+              <u>Redux</u>,<u>TypeScript </u>, <u>API</u>, <u>Some react libraries</u>.
             </p>
-            <NavHashLink to="/home/#about"><button className="btn btn-success">Read more</button></NavHashLink>
+            <NavHashLink to="/home/#about">
+              <button className="btn btn-success mt-4">Read more</button>
+            </NavHashLink>
           </div>
 
           <div className="skill-content col-lg-7">
