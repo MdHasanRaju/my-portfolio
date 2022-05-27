@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Button, Nav} from "react-bootstrap";
+import { Col, Container, Row, Button, Nav } from "react-bootstrap";
 import Blog3 from "../../../images/undraw_coding_re_iv62.svg";
 import "./Banner.css";
 import Typewriter from "typewriter-effect";
@@ -127,23 +127,22 @@ const Banner = () => {
                   I am Professional UI/UX Designer With Frontend And Backend Web
                   Development Skills Based on Client Desire.
                 </p>
-                
+
                 <Nav.Link
-                style={{
-                  borderRadius: "20px",
-                  padding: "10px 35px",
-                  marginTop: "15px",
-                  border:"none",
-                  textDecoration:"none",
-                  width:"125px"
-                }}
-              className="clr-code"
-              download
-              target="_blank" 
-              href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
-                          
-            >
-              {/* <Button
+                  style={{
+                    borderRadius: "20px",
+                    padding: "10px 35px",
+                    marginTop: "15px",
+                    border: "none",
+                    textDecoration: "none",
+                    width: "125px",
+                  }}
+                  className="clr-code"
+                  download
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
+                >
+                  {/* <Button
                 style={{
                   borderRadius: "40px",
                   padding: "10px 30px",
@@ -153,9 +152,58 @@ const Banner = () => {
                 className="clr-code"
               >
             </Button>{" "} */}
-            Resume
-            </Nav.Link>
-
+                  Resume
+                </Nav.Link>
+                <div className="d-flex alignItems-center ms-0">
+                <Nav.Link
+                  style={{
+                    borderRadius: "20px",
+                    marginTop: "15px",
+                    marginLeft:'0px',
+                    fontSize:'30px',
+                    border: "none",
+                    textDecoration: "none",
+                  }}
+                  className="icon-color"
+                  download
+                  target="_blank"
+                  href="https://www.facebook.com/hasanmahmudraju.raju"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </Nav.Link>
+                <Nav.Link
+                  style={{
+                    borderRadius: "20px",
+                    marginTop: "15px",
+                    marginLeft:'0px',
+                    fontSize:'30px',
+                    border: "none",
+                    textDecoration: "none",
+                  }}
+                  className="icon-color"
+                  download
+                  target="_blank"
+                  href="https://www.linkedin.com/in/md-mahmudul-hasan853/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </Nav.Link>
+                <Nav.Link
+                  style={{
+                    borderRadius: "20px",
+                    marginTop: "15px",
+                    marginLeft:'0px',
+                    fontSize:'30px',
+                    border: "none",
+                    textDecoration: "none",
+                  }}
+                  className="icon-color"
+                  download
+                  target="_blank"
+                  href=""
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </Nav.Link>
+                </div>
               </div>
             </Col>
 

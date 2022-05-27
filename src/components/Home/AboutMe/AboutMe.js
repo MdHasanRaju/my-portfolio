@@ -34,7 +34,7 @@ const AboutMe = () => {
   };
 
   return (
-    <div id="about" style={{ margin: "150px 0px" }} class="bg-dark py-5">
+    <div id="about" style={{ margin: "50px 0px" }} class="bg-dark py-5">
       <div class="container">
         <div class="text-center text-white pb-4">
           <Fade triggerOnce={true}>

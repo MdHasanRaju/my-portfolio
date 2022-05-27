@@ -10,9 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import ProjectThree from './components/Home/ProjectThree/ProjectThree';
 // import Footer from './components/Home/Footer/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, } from "react";
 import Loading from "./components/Loading/Loading";
-
 const Navigation = lazy(() => import("./Navigation.js"));
 const Home = lazy(() => import("./components/Home/Home/Home.js"));
 const Blogs = lazy(() => import("./components/Blogs/Blogs"));

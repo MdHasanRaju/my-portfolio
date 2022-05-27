@@ -9,6 +9,14 @@
 
 }
 
+.icon-color{
+    color:rgb(140, 236, 183)
+}
+
+.icon-color:hover{
+    color:rgb(3, 180, 83)
+}
+
 .clr-code:hover{
     background-color: rgb(72, 206, 143)!important;
     /* border: 1px solid darkcyan!important; */

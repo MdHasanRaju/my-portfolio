@@ -86,7 +86,7 @@ const Navigation = () => {
               className="tggle"
               style={{ margin: "auto 5px", color: "lightgray" }}
               target="_blank"
-              href="https://drive.google.com/file/d/1eci_y1cJJAB8Iep87_qhN9I0qtawiKAx/view?usp=sharing"
+              href="https://drive.google.com/file/d/1LWRfu3PIom4d0Qt3ZOjFTVDqK1DIb3Ln/view?usp=sharing"
               download
             >
               Resume
