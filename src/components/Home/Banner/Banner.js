@@ -16,8 +16,6 @@ const Banner = () => {
     console.log(container);
   };
 
-  const history = useHistory();
-
   return (
     <div className="banner">
       <Particles
@@ -98,7 +96,7 @@ const Banner = () => {
         }}
       />
       <Container>
-        <div style={{ padding: "180px 0px" }}>
+        <div style={{ padding: "150px 0px",marginTop:'70px' }}>
           <Row className='g-4'>
             <Col sm={6} style={{ margin: "auto 0px" }}>
               <div style={{ textAlign: "start", color: "white" }}>
