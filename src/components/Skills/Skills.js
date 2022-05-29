@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
+import { Fade, Slide } from "react-awesome-reveal";
 
 // let progressInterval = null;
 
@@ -93,13 +94,24 @@ const Skills = () => {
     <section className="skill-section bg-dark py-5 text-light">
       <div className="container">
         <div className="skill-title text-center mb-5">
-          <h1 data-aos="fade-down title">My skills</h1>
-          <div>
-            <div style={line}></div>
-            <span>what i know</span>
-            <div style={line}></div>
-          </div>
+          <Slide
+            triggerOnce={true}
+            smooth={true}
+            spy="true"
+            duration={2000}
+            direction="right"
+          >
+            <h1 className="title">My skills</h1>
+          </Slide>
+          <Slide triggerOnce={true} smooth={true} spy="true" duration={2000}>
+            <div>
+              <div style={line}></div>
+              <span>what i know</span>
+              <div style={line}></div>
+            </div>
+          </Slide>
         </div>
+
         <div className="skill-clm row g-4">
           <div className="skill-content mt-3 col-lg-5 line-height-5">
             <h3>My creative skills &amp; experiences.</h3>
@@ -114,7 +126,8 @@ const Skills = () => {
               <u>Tailwind</u>, <u>ES6</u>, <u>MUI</u>,{" "}
               <u>Firebase Authentication</u>, <u>React-router-dom</u>,{" "}
               <u>Github</u>, <u>Netlify</u>, <u>Heroku</u>, <u>Node JS</u>,{" "}
-              <u>Redux</u>,<u>TypeScript </u>, <u>API</u>, <u>Some react libraries</u>.
+              <u>Redux</u>,<u>TypeScript </u>, <u>API</u>,{" "}
+              <u>Some react libraries</u>.
             </p>
             <NavHashLink to="/home/#about">
               <button className="btn btn-success mt-4">Read more</button>

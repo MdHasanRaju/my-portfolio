@@ -41,7 +41,7 @@ const AboutMe = () => {
     <div id="about" style={{ margin: "160px 0px" }} class="bg-dark py-5">
       <div class="container">
         <div class="text-center text-white pb-4">
-          <Fade triggerOnce={true}>
+          <Fade triggerOnce={true} smooth={true} spy="true" duration={2000}>
             <h1>ABOUT ME</h1>
             <div>
               <div style={line}></div>
@@ -52,7 +52,7 @@ const AboutMe = () => {
         </div>
         <div class="row gy-sm-3  pb-5">
           <div class="col-lg-6 col-sm-6 mb-3">
-            <Rotate triggerOnce={true}>
+            <Rotate triggerOnce={true} smooth={true} spy="true" duration={2000}>
               <div>
                 {" "}
                 <img width="350px" src={me} alt="" />

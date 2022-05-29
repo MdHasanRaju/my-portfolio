@@ -34,11 +34,11 @@ const Projects = () => {
 
   return (
     <div id="projects" className="container mx-auto my-5">
-      <Slide triggerOnce={true}>
+      <Slide triggerOnce={true} smooth={true} spy="true" duration={2000}>
         <h1 className="text-center mb-4 title">PROJECTS</h1>
       </Slide>
       <div class="row row-cols-1 row-cols-md-3  g-4">
-        <JackInTheBox triggerOnce={true}>
+        <JackInTheBox triggerOnce={true} smooth={true} spy="true" duration={2000}>
           <div class="col">
             <div class="preview rounded" style={{ color: "white" }}>
               <div className="box box1"></div>

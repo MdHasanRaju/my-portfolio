@@ -96,7 +96,7 @@ const Navigation = () => {
               activeStyle={{ color: "rgb(140, 236, 183)" }}
               to="/"
               style={{
-                borderRadius: "40px",
+                borderRadius: "30px",
                 padding: "10px 30px",
                 margin: "auto 5px",
                 border: "none",
