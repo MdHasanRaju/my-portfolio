@@ -13,7 +13,10 @@ import {
   Hinge,
 } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import me from "../../../images/sea1.jpg";
+import './AboutMe.css';
+import { Button } from "react-bootstrap";
 
 const AboutMe = () => {
   useEffect(() => {
@@ -34,13 +37,13 @@ const AboutMe = () => {
   };
 
   return (
+
     <div id="about" style={{ margin: "50px 0px" }} class="bg-dark py-5">
       <div class="container">
         <div class="text-center text-white pb-4">
           <Fade triggerOnce={true}>
             <h1>ABOUT ME</h1>
             <div>
-              {" "}
               <div style={line}></div>
               <span>who i am</span>
               <div style={line}></div>

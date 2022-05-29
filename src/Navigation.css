@@ -9,13 +9,18 @@
 
 }
 
-.icon-color{
+NavHashLink, NavHashLink:visited{
+    background-color: rgb(140, 236, 183)!important;
+}
+
+.icon-color,.icon-color:visited{
     color:rgb(140, 236, 183)
 }
 
 .icon-color:hover{
-    color:rgb(3, 180, 83)
+    color:rgb(47, 226, 128)
 }
+
 
 .clr-code:hover{
     background-color: rgb(72, 206, 143)!important;

@@ -5,17 +5,18 @@ import "./Banner.css";
 import Typewriter from "typewriter-effect";
 import { Link, NavLink } from "react-router-dom";
 import Particles from "react-tsparticles";
+import { useHistory } from "react-router-dom";
 
 const Banner = () => {
   const particlesInit = (main) => {
     console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
 
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
+  const history = useHistory();
 
   return (
     <div className="banner">
@@ -98,7 +99,7 @@ const Banner = () => {
       />
       <Container>
         <div style={{ padding: "160px 0px" }}>
-          <Row>
+          <Row className='g-4'>
             <Col sm={6} style={{ margin: "auto 0px" }}>
               <div style={{ textAlign: "start", color: "white" }}>
                 <h4>Hi There, I am</h4>
@@ -142,73 +143,64 @@ const Banner = () => {
                   target="_blank"
                   href="https://drive.google.com/file/d/1sSgJ96jnMrLnjFBA3m5_LYako40PYpJC/view?fbclid=IwAR0cMBbmax5fMvklZgjl3jBS-7eBpr2U2bGCRkCky4ltqNCz-2fRJ3EkW2A"
                 >
-                  {/* <Button
-                style={{
-                  borderRadius: "40px",
-                  padding: "10px 30px",
-                  margin: "auto 5px",
-                  border:"none"
-                }}
-                className="clr-code"
-              >
-            </Button>{" "} */}
                   Resume
                 </Nav.Link>
-                <div className="d-flex alignItems-center ms-0">
-                <Nav.Link
-                  style={{
-                    borderRadius: "20px",
-                    marginTop: "15px",
-                    marginLeft:'0px',
-                    fontSize:'30px',
-                    border: "none",
-                    textDecoration: "none",
-                  }}
-                  className="icon-color"
-                  download
-                  target="_blank"
-                  href="https://www.facebook.com/hasanmahmudraju.raju"
-                >
-                  <i class="fa-brands fa-facebook"></i>
-                </Nav.Link>
-                <Nav.Link
-                  style={{
-                    borderRadius: "20px",
-                    marginTop: "15px",
-                    marginLeft:'0px',
-                    fontSize:'30px',
-                    border: "none",
-                    textDecoration: "none",
-                  }}
-                  className="icon-color"
-                  download
-                  target="_blank"
-                  href="https://www.linkedin.com/in/md-mahmudul-hasan853/"
-                >
-                  <i class="fa-brands fa-linkedin"></i>
-                </Nav.Link>
-                <Nav.Link
-                  style={{
-                    borderRadius: "20px",
-                    marginTop: "15px",
-                    marginLeft:'0px',
-                    fontSize:'30px',
-                    border: "none",
-                    textDecoration: "none",
-                  }}
-                  className="icon-color"
-                  download
-                  target="_blank"
-                  href=""
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </Nav.Link>
+                <div className="d-flex justify-content-start alignItems-center mt-2">
+                  <Nav.Link
+                    style={{
+                      borderRadius: "20px",
+                      marginRight: "15px",
+                      fontSize: "30px",
+                      border: "none",
+                      padding: "0px",
+                      textDecoration: "none",
+                    }}
+                    className="icon-color"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/md-mahmudul-hasan-1a8145227/"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </Nav.Link>
+
+                  <Nav.Link
+                    style={{
+                      borderRadius: "20px",
+                      marginRight: "15px",
+                      fontSize: "30px",
+                      border: "none",
+                      padding: "0px",
+                      textDecoration: "none",
+                    }}
+                    className="icon-color"
+                    download
+                    target="_blank"
+                    href="https://www.facebook.com/hasanmahmudraju.raju"
+                  >
+                    <i
+                      class="fa-brands fa-facebook "
+                    ></i>
+                  </Nav.Link>
+                  <Nav.Link
+                    style={{
+                      borderRadius: "20px",
+                      padding: "0px",
+                      fontSize: "30px",
+                      border: "none",
+                      textDecoration: "none",
+                    }}
+                    className="icon-color"
+                    download
+                    target="_blank"
+                    href="#"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </Nav.Link>
                 </div>
               </div>
             </Col>
 
             <Col sm={6}>
-              <img style={{ width: "100%" }} src={Blog3} alt="" />
+              <img style={{ width: "100%", height:"100%" }} src={Blog3} alt="portfolio.png" />
             </Col>
           </Row>
         </div>

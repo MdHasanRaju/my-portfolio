@@ -3,7 +3,7 @@ import "./Navigation.css";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-import logo from './images/cover-removebg-preview.png';
+import logo from "./images/cover-removebg-preview.png";
 
 const Navigation = () => {
   return (
@@ -95,18 +95,19 @@ const Navigation = () => {
               activeClassName="selected"
               activeStyle={{ color: "rgb(140, 236, 183)" }}
               to="/"
+              style={{
+                borderRadius: "40px",
+                padding: "10px 30px",
+                margin: "auto 5px",
+                border: "none",
+                textDecoration:"none",
+                focus:{
+                  color:'green'
+                }
+              }}
+              className="clr-code"
             >
-              <Button
-                style={{
-                  borderRadius: "40px",
-                  padding: "10px 30px",
-                  margin: "auto 5px",
-                  border:"none"
-                }}
-                className="clr-code"
-              >
-                Case Studies
-              </Button>{" "}
+              Case Studies
             </NavHashLink>
           </Nav>
         </Navbar.Collapse>
