@@ -91,7 +91,7 @@ const Education = () => {
                   <h3>B.Sc Honors In Zoology</h3>
                   <p>Govt. Tolaram College, Narayangonj.</p>
                   <p>
-                    Completed B.Sc With 1st Class From This College,Narayangonj,
+                    Completed B.Sc With 1st Class From This College, Narayangonj,
                     Dhaka
                   </p>
                 </div>
@@ -102,7 +102,7 @@ const Education = () => {
                     color: "#263859",
                   }}
                 >
-                  <h4>Jan - Feb 2016 - 2021</h4>
+                  <h4>June - Feb 2016 - 2022</h4>
                 </div>
               </li>
 

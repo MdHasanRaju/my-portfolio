@@ -98,7 +98,7 @@ const Banner = () => {
         }}
       />
       <Container>
-        <div style={{ padding: "160px 0px" }}>
+        <div style={{ padding: "180px 0px" }}>
           <Row className='g-4'>
             <Col sm={6} style={{ margin: "auto 0px" }}>
               <div style={{ textAlign: "start", color: "white" }}>
@@ -111,7 +111,7 @@ const Banner = () => {
                 </h1>
                 <h3></h3>
 
-                <h3 style={{ color: "rgb(140, 236, 183)" }}>
+                <h3 style={{ color: "rgb(140, 236, 183)",marginBottom:'10px' }}>
                   <Typewriter
                     options={{
                       strings: [
@@ -131,10 +131,11 @@ const Banner = () => {
 
                 <Nav.Link
                   style={{
-                    borderRadius: "20px",
+                    borderRadius: "10px",
                     padding: "10px 35px",
-                    marginTop: "15px",
+                    marginTop: "30px",
                     border: "none",
+                    fontWeight:'500',
                     textDecoration: "none",
                     width: "125px",
                   }}
