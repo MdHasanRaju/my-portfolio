@@ -102,7 +102,7 @@ const Education = () => {
                     color: "#263859",
                   }}
                 >
-                  <h4>Jan - Feb 2013 - 2014</h4>
+                  <h4>Jan - Feb 2016 - 2021</h4>
                 </div>
               </li>
 
