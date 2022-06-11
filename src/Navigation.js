@@ -102,7 +102,7 @@ const Navigation = () => {
                 borderRadius: "30px",
                 padding: "10px 30px",
                 margin: "auto 5px",
-                width: "150px",
+                width: "157px",
                 textDecoration: "none",
                 focus: {
                   color: "green",

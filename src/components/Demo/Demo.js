@@ -1,7 +1,18 @@
 import React from "react";
 import Mailer from "../Mailer/Mailer";
-import { Fade, Slide } from "react-awesome-reveal";
+// import { Fade, Slide } from "react-awesome-reveal";
 import "./Demo.css";
+import {
+  Flip,
+  Fade,
+  JackInTheBox,
+  Slide,
+  Bounce,
+  Zoom,
+  Rotate,
+  Roll,
+  Hinge,
+} from "react-awesome-reveal";
 
 const Demo = () => {
   const line = {
@@ -38,8 +49,17 @@ const Demo = () => {
         {/* contact_body */}
         <div className="row ">
           {/* contact_bodyRight */}
+
           <div className="col-lg-5  ">
-            <Mailer />
+            <Slide
+              triggerOnce={true}
+              smooth={true}
+              spy="true"
+              duration={2000}
+              direction="left"
+            >
+              <Mailer />
+            </Slide>
             {/* <Fade bottom>
             <a
               href="https://www.instagram.com/accounts/login/"
@@ -93,45 +113,55 @@ const Demo = () => {
             </a>
           </Fade> */}
           </div>
+
           {/* contact_bodyLeft */}
+
           <div className="col-lg-7">
-            <div className="contact_details">
-              <h2>Md. Mahmudul Hasan</h2> <br />
-              <h4 className="fw-bold">
-                <span className="bold-effect ">AGE:</span> 24
-              </h4>
-              <h4 className="fw-bold">
-                <span className="bold-effect ">COUNTRY:</span> BANGLADESH
-              </h4>
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                href="https://goo.gl/maps/6Lt8Q8s6CUn3RcNR6"
-                target="blank"
-                rel="noopener noreferrer"
-              >
-                <h4 className="fw-bold text-uppercase">
-                  <span className="bold-effect">ADDRESS</span>: Staff Quarter,
-                  Demra, Dhaka - 1361,
+            <Slide
+              triggerOnce={true}
+              smooth={true}
+              spy="true"
+              duration={2000}
+              direction="right"
+            >
+              <div className="contact_details">
+                <h2>Md. Mahmudul Hasan</h2> <br />
+                <h4 className="fw-bold">
+                  <span className="bold-effect ">AGE:</span> 24
                 </h4>
-              </a>
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                href="tel:918281627763"
-              >
-                <h4 className="fw-bold text-uppercase">
-                  <span className="bold-effect">PHONE:</span> +8801517140853
+                <h4 className="fw-bold">
+                  <span className="bold-effect ">COUNTRY:</span> BANGLADESH
                 </h4>
-              </a>
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                href="mailto:hemanththanal@gmail.com"
-              >
-                <h4>
-                  <span className="bold-effect">EMAIL:</span>{" "}
-                  mdhasanraju2017@gmail.com
-                </h4>
-              </a>
-            </div>
+                <a
+                  style={{ textDecoration: "none", color: "black" }}
+                  href="https://goo.gl/maps/6Lt8Q8s6CUn3RcNR6"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  <h4 className="fw-bold text-uppercase">
+                    <span className="bold-effect">ADDRESS</span>: Staff Quarter,
+                    Demra, Dhaka - 1361,
+                  </h4>
+                </a>
+                <a
+                  style={{ textDecoration: "none", color: "black" }}
+                  href="tel:918281627763"
+                >
+                  <h4 className="fw-bold text-uppercase">
+                    <span className="bold-effect">PHONE:</span> +8801517140853
+                  </h4>
+                </a>
+                <a
+                  style={{ textDecoration: "none", color: "black" }}
+                  href="mailto:hemanththanal@gmail.com"
+                >
+                  <h4>
+                    <span className="bold-effect">EMAIL:</span>{" "}
+                    mdhasanraju2017@gmail.com
+                  </h4>
+                </a>
+              </div>
+            </Slide>
           </div>
         </div>
       </div>
