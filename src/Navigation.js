@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import logo from "./images/cover-removebg-preview.png";
 
@@ -9,8 +9,10 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand style={{ color: "rgb(140, 236, 183)" }} href="#">
-          <img height="60px" weight="65px" src={logo} alt="" />
+        <Navbar.Brand style={{ color: "rgb(140, 236, 183)" }}>
+          <NavLink to="/">
+            <img height="60px" weight="65px" src={logo} alt="" />
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -38,7 +40,7 @@ const Navigation = () => {
               }}
               activeClassName="selected"
               activeStyle={{ color: "rgb(140, 236, 183)" }}
-              to="/home/#about"
+              to="/home#about"
             >
               About
             </NavHashLink>
@@ -51,9 +53,22 @@ const Navigation = () => {
               }}
               activeClassName="selected"
               activeStyle={{ color: "rgb(140, 236, 183)" }}
-              to="/home/#projects"
+              to="/home#projects"
             >
               Projects
+            </NavHashLink>
+            <NavHashLink
+              className="tggle"
+              style={{
+                margin: "auto 5px",
+                textDecoration: "none",
+                color: "lightgray",
+              }}
+              activeClassName="selected"
+              activeStyle={{ color: "rgb(140, 236, 183)" }}
+              to="/home#contact"
+            >
+              Contact Me
             </NavHashLink>
 
             <NavHashLink
@@ -69,19 +84,7 @@ const Navigation = () => {
             >
               Blogs
             </NavHashLink>
-            <NavHashLink
-              className="tggle"
-              style={{
-                margin: "auto 5px",
-                textDecoration: "none",
-                color: "lightgray",
-              }}
-              activeClassName="selected"
-              activeStyle={{ color: "rgb(140, 236, 183)" }}
-              to="/contact"
-            >
-              Contact Me
-            </NavHashLink>
+
             <Nav.Link
               className="tggle"
               style={{ margin: "auto 5px", color: "lightgray" }}
@@ -99,11 +102,11 @@ const Navigation = () => {
                 borderRadius: "30px",
                 padding: "10px 30px",
                 margin: "auto 5px",
-                border: "none",
-                textDecoration:"none",
-                focus:{
-                  color:'green'
-                }
+                width: "150px",
+                textDecoration: "none",
+                focus: {
+                  color: "green",
+                },
               }}
               className="clr-code"
             >

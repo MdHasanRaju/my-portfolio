@@ -25,14 +25,17 @@ const Education = () => {
   return (
     <section className="edu_cation">
       <div>
-      <Fade triggerOnce={true} smooth={true} spy="true" duration={2000}>
-        <div className="workheading">Education</div>
-      </Fade>
-      <div className="text-center">
-        <div style={line}></div>
-        <span>What I did</span>
-        <div style={line}></div>
-      </div>
+        <Fade triggerOnce={true} smooth={true} spy="true" duration={2000}>
+          <div className="text-center ">
+            {" "}
+            <h1 className="title">EDUCATION</h1>
+          </div>
+        </Fade>
+        <div className="text-center">
+          <div style={line}></div>
+          <span>What I did</span>
+          <div style={line}></div>
+        </div>
       </div>
       <Slide triggerOnce={true} left smooth={true} spy="true" duration={2000}>
         <div className="educationWrapper">
@@ -91,8 +94,8 @@ const Education = () => {
                   <h3>B.Sc Honors In Zoology</h3>
                   <p>Govt. Tolaram College, Narayangonj.</p>
                   <p>
-                    Completed B.Sc With 1st Class From This College, Narayangonj,
-                    Dhaka
+                    Completed B.Sc With 1st Class From This College,
+                    Narayangonj, Dhaka
                   </p>
                 </div>
                 <div

@@ -6,6 +6,9 @@ import Typewriter from "typewriter-effect";
 import { Link, NavLink } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { useHistory } from "react-router-dom";
+import "pathseg";
+import image1 from './../../../images/cover-removebg-preview.png';
+// import image2 from './../../../images/assignment12.png';
 
 const Banner = () => {
   const particlesInit = (main) => {
@@ -16,9 +19,99 @@ const Banner = () => {
     console.log(container);
   };
 
+//   var style = {
+//     width: "100vw",
+//     height: "100vh",
+// };
+
+
   return (
-    <div className="banner">
-      <Particles
+    <div  className="banner">
+      {/* <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 60,
+                duration: 2.5,
+                opacity: 0.5,
+                size: 40,
+              },
+              push: {
+                quantity: 6,
+              },
+              repulse: {
+                distance: 80,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: false,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: false,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: true,
+              speed: 3,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 50,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "images",
+              "stroke": {
+                "width": 0,
+                "color": "#000"
+              },
+              images:[{src:image1, height:50,width:50},{src:image2, height:50,width:50}],
+            },
+            size: {
+              random: true,
+              value: 50,
+            },
+          },
+          detectRetina: true,
+          
+        }}
+      /> */}
+
+<Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}

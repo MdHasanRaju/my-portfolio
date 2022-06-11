@@ -13,9 +13,9 @@ import {
 } from "react-awesome-reveal";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import a10 from "../../../images/assignment-10.png";
+// import a10 from "../../../images/assignment-10.png";
 import a11 from "../../../images/a11.png";
-import a12 from "../../../images/assignment12.png";
+// import a12 from "../../../images/12.png";
 import im1 from "../../../images/12.png";
 import im2 from "../../../images/11.png";
 import im3 from "../../../images/10.png";

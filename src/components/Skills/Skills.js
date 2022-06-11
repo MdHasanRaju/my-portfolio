@@ -101,7 +101,7 @@ const Skills = () => {
             duration={2000}
             direction="right"
           >
-            <h1 className="title">My skills</h1>
+            <h1 className="title">MY SKILLS</h1>
           </Slide>
           <Slide triggerOnce={true} smooth={true} spy="true" duration={2000}>
             <div>

@@ -4,7 +4,7 @@ import data1 from "./../../images/loading/portfolio-loading.json";
 import data2 from "./../../images/loading/loading2.json";
 import data3 from "./../../images/loading/loading3.json";
 import data4 from "./../../images/loading/loading4.json";
-import data5 from "./../../images/loading/loading6.json";
+import data5 from "./../../images/loading/loading5.json";
 
 const Loading = () => {
     const style = {

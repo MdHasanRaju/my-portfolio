@@ -41,7 +41,7 @@ const AboutMe = () => {
       <div class="container">
         <div class="text-center text-white pb-4">
           <Fade triggerOnce={true} smooth={true} spy="true" duration={2000}>
-            <h1>ABOUT ME</h1>
+            <h1 className="title">ABOUT ME</h1>
             <div>
               <div style={line}></div>
               <span>who i am</span>
@@ -71,8 +71,8 @@ const AboutMe = () => {
                 whether it be html, css, js or react. I also feel free to make
                 full-stack website.{" "}
               </p>
-              <Link to="/contact">
-                <button className="btn btn-success mt-4">Contact Me</button>
+              <Link to="/#">
+                <button className="btn btn-success mt-4">Hire Me</button>
               </Link>
             </Rotate>
           </div>
